@@ -1,0 +1,6 @@
+# Original-Quelldateien im Wurzelordner – liegen lokal, nicht fürs Deployment nötig
+# (Fotos sind als komprimierte JPEGs/PNG in assets/, Logos inline im HTML).
+# Nur Wurzelebene ignorieren, damit assets/ vollständig deployt wird.
+/*.png
+/*.svg
+berkay-portfolio.zip

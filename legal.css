@@ -1,0 +1,50 @@
+/* Gemeinsames Stylesheet für Impressum und Datenschutz.
+   Nutzt dieselben Tokens wie index.html, kompakt gehalten. */
+:root {
+  --paper: #eef0f4;
+  --surface: #ffffff;
+  --ink: #12141a;
+  --ink-soft: #464c58;
+  --ink-faint: #828896;
+  --line: #d5dae2;
+  --accent: #2743e0;
+  --sans: "Archivo", -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans); font-size: 1.0625rem; line-height: 1.65;
+  background: var(--paper); color: var(--ink); -webkit-font-smoothing: antialiased;
+}
+::selection { background: var(--accent); color: #fff; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+/* Kopf */
+.legal-header { border-bottom: 1px solid var(--line); position: sticky; top: 0; background: rgba(238, 240, 244, 0.9); backdrop-filter: blur(10px); z-index: 10; }
+.legal-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+.legal-header .brand { font-weight: 900; letter-spacing: -0.02em; text-decoration: none; color: var(--ink); }
+.legal-header .brand sup { color: var(--accent); font-size: 0.6em; }
+.legal-header .back { font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; text-decoration: none; color: var(--ink-soft); }
+.legal-header .back:hover { color: var(--accent); }
+
+/* Inhalt */
+main { padding: 56px 0 80px; }
+.eyebrow { font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent); margin-bottom: 12px; }
+h1 { font-size: clamp(2.1rem, 6vw, 3rem); font-weight: 900; letter-spacing: -0.03em; line-height: 1.05; text-transform: uppercase; margin-bottom: 28px; }
+h2 { font-size: 1.25rem; font-weight: 800; letter-spacing: -0.01em; margin: 40px 0 10px; }
+h3 { font-size: 1rem; font-weight: 700; margin: 22px 0 6px; }
+p, ul { margin-bottom: 14px; color: var(--ink-soft); }
+ul { padding-left: 20px; }
+li { margin-bottom: 6px; }
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+strong { color: var(--ink); }
+.addr { font-style: normal; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; color: var(--ink); margin-bottom: 14px; }
+.addr-line { display: block; }
+.muted { color: var(--ink-faint); font-size: 0.9rem; }
+
+/* Fuss */
+.legal-footer { border-top: 1px solid var(--line); padding: 26px 0; }
+.legal-footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-faint); }
+.legal-footer a { color: var(--ink-faint); text-decoration: none; }
+.legal-footer a:hover { color: var(--accent); }
