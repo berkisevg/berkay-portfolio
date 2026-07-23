@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Berkay Sevgili | Automation Engineer</title>
+<meta name="description" content="Ich automatisiere wiederkehrende Prozesse mit UiPath, Power Platform und Copilot Studio. Von der Analyse bis zum Betrieb, umgesetzt bei Migros, PostFinance und PwC.">
+<link rel="canonical" href="https://pascal-kuptz.github.io/berkay-portfolio/">
+<meta name="author" content="Berkay Sevgili">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#12141a">
+<meta name="keywords" content="Automation Engineer, UiPath, RPA, Power Platform, Power Apps, Power Automate, Copilot Studio, Citizen Development, Prozessautomatisierung, Zürich, Schweiz">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Berkay Sevgili | Portfolio">
+<meta property="og:title" content="Berkay Sevgili | Automation Engineer">
+<meta property="og:description" content="Ich automatisiere wiederkehrende Prozesse mit UiPath, Power Platform und Copilot Studio. Von der Analyse bis zum Betrieb, umgesetzt bei Migros, PostFinance und PwC.">
+<meta property="og:image" content="https://pascal-kuptz.github.io/berkay-portfolio/assets/portrait.jpg">
+<meta property="og:image:alt" content="Porträt von Berkay Sevgili">
+<meta property="og:url" content="https://pascal-kuptz.github.io/berkay-portfolio/">
+<meta property="og:locale" content="de_CH">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Berkay Sevgili | Automation Engineer, Zürich">
+<meta name="twitter:description" content="Ich automatisiere wiederkehrende Prozesse mit UiPath, Power Platform und Copilot Studio. Von der Analyse bis zum Betrieb, umgesetzt bei Migros, PostFinance und PwC.">
+<meta name="twitter:image" content="https://pascal-kuptz.github.io/berkay-portfolio/assets/portrait.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* ==========================================================
+     DESIGN TOKENS
+     ========================================================== */
+  :root {
+    /* Farben: Flächen und Text (kühl, neutral) */
+    --paper: #eef0f4;
+    --paper-deep: #e2e5ec;
+    --surface: #ffffff;
+    --ink: #12141a;
+    --ink-soft: #464c58;
+    --ink-faint: #828896;
+    --line: #d5dae2;
+
+    /* Farben: inverse Flächen (dunkle Sektionen) */
+    --inv-bg: #12141a;
+    --inv-text: #eef0f4;
+    --inv-text-soft: #a3a8b4;
+    --inv-text-faint: #70757f;
+    --inv-line: #262a34;
+    --inv-line-soft: #373c48;
+    --inv-surface: #191c24;
+
+    /* Farben: Akzent (Kobaltblau; -bright für Text/Linien auf Dunkel) */
+    --accent: #2743e0;
+    --accent-bright: #6a80ff;
+    --accent-ink: #fff;
+
+    /* Schrift: Familien */
+    --sans: "Archivo", -apple-system, "Segoe UI", sans-serif;
+    --serif: "Instrument Serif", Georgia, serif;
+    --mono: "IBM Plex Mono", ui-monospace, monospace;
+
+    /* Schrift: fluide Groessenskala */
+    --text-2xs: 0.6875rem;                                   /* 11px Micro-Labels */
+    --text-xs: 0.75rem;                                      /* 12px Mono-Labels */
+    --text-sm: 0.875rem;                                     /* 14px Meta, Buttons */
+    --text-base: 1.0625rem;                                  /* 17px Fliesstext */
+    --text-lg: clamp(1.125rem, 1rem + 0.5vw, 1.3125rem);     /* 18-21px Intro */
+    --text-xl: clamp(1.25rem, 1.1rem + 0.8vw, 1.625rem);     /* 20-26px Kartentitel */
+    --text-2xl: clamp(1.5rem, 1.2rem + 1.6vw, 2.25rem);      /* 24-36px Zeilentitel, Lead */
+    --text-3xl: clamp(1.9rem, 1.4rem + 2.6vw, 3.25rem);      /* 30-52px Zwischenstufe */
+    --text-4xl: clamp(2.375rem, 1.6rem + 4vw, 4.5rem);       /* 38-72px Sektionstitel */
+    --text-5xl: clamp(2.75rem, 1.8rem + 5.5vw, 6rem);        /* 44-96px Kontakt, Ziffern */
+    --text-display: clamp(3.25rem, 2rem + 7.5vw, 6.75rem);   /* 52-108px Hero, Footer */
+
+    /* Schrift: Zeilenhoehen */
+    --leading-none: 0.95;
+    --leading-tight: 1.05;
+    --leading-snug: 1.2;
+    --leading-title: 1.3;
+    --leading-label: 1.4;
+    --leading-body: 1.65;
+
+    /* Schrift: Laufweiten */
+    --track-display: -0.03em;
+    --track-tight: -0.02em;
+    --track-caps: 0.14em;
+    --track-caps-wide: 0.18em;
+
+    /* Abstaende: 4px-Basis */
+    --sp-1: 0.25rem;
+    --sp-2: 0.5rem;
+    --sp-3: 0.75rem;
+    --sp-4: 1rem;
+    --sp-5: 1.5rem;
+    --sp-6: 2rem;
+    --sp-7: 2.5rem;
+    --sp-8: 3rem;
+    --sp-9: 4rem;
+    --sp-10: 6rem;
+
+    /* Layout */
+    --container: 1200px;
+    --gutter: clamp(1.25rem, 4vw, 2rem);
+    --section-y: clamp(5rem, 4rem + 6vw, 8.5rem);
+    --section-y-sm: clamp(3rem, 2.5rem + 3vw, 5rem);
+    --header-h: 4rem;
+
+    /* Form und Linien */
+    --radius-pill: 999px;
+    --bw: 1px;
+    --bw-strong: 1.5px;
+
+    /* Schatten */
+    --shadow-lift: 0 16px 40px rgba(20, 22, 29, 0.1);
+
+    /* Bewegung */
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --dur-1: 0.2s;
+    --dur-2: 0.45s;
+    --dur-3: 0.7s;
+  }
+
+  /* ==========================================================
+     BASIS
+     ========================================================== */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    font-size: var(--text-base);
+    background: var(--paper);
+    color: var(--ink);
+    line-height: var(--leading-body);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  ::selection { background: var(--accent); color: var(--accent-ink); }
+  img { max-width: 100%; height: auto; display: block; }
+  section { scroll-margin-top: var(--header-h); }
+  p { text-wrap: pretty; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .wrap { max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+
+  /* Ueberschriften: Groesse pro Ebene, Rhythmus aus den Tokens */
+  h1, h2, h3 { font-weight: 800; letter-spacing: var(--track-tight); line-height: var(--leading-tight); text-wrap: balance; }
+  h1 { font-size: var(--text-display); line-height: var(--leading-none); letter-spacing: var(--track-display); font-weight: 900; }
+  h2 { font-size: var(--text-4xl); letter-spacing: var(--track-display); text-transform: uppercase; }
+  h3 { font-size: var(--text-xl); line-height: var(--leading-snug); }
+  h2 .serif-it { text-transform: none; font-size: 1.06em; }
+
+  .serif-it { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spacing: 0; }
+  .mono {
+    font-family: var(--mono);
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: var(--track-caps);
+    font-weight: 500;
+    line-height: var(--leading-label);
+  }
+
+  /* ==========================================================
+     REVEALS
+     ========================================================== */
+  /* Reveal nur aktiv, wenn JS die .js-Klasse gesetzt hat (sonst Inhalt sichtbar) */
+  .js .rv { opacity: 0; transform: translateY(28px); transition: opacity var(--dur-3) var(--ease-out), transform var(--dur-3) var(--ease-out); }
+  .rv.in { opacity: 1; transform: none; }
+  .rv-d1 { transition-delay: 0.08s; }
+  .rv-d2 { transition-delay: 0.16s; }
+  .rv-d3 { transition-delay: 0.24s; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .js .rv { opacity: 1; transform: none; transition: none; }
+    .marquee-track { animation: none !important; }
+  }
+
+  /* ==========================================================
+     BAUSTEINE
+     ========================================================== */
+  .section { padding: var(--section-y) 0; }
+  .section--tight { padding-top: var(--section-y-sm); }
+  .section--flush-top { padding-top: 0; }
+  .section-intro { margin-top: var(--sp-5); color: var(--ink-soft); max-width: 56ch; font-size: var(--text-lg); }
+
+  .sec-head { display: flex; align-items: baseline; gap: var(--sp-4); margin-bottom: var(--sp-3); }
+  .sec-head .idx { font-family: var(--mono); font-size: var(--text-xs); letter-spacing: var(--track-caps); text-transform: uppercase; color: var(--accent); white-space: nowrap; }
+  .sec-head .rule { flex: 1; height: var(--bw); background: var(--line); }
+
+  .btn {
+    display: inline-flex; align-items: center; gap: var(--sp-2);
+    background: var(--ink); color: var(--paper);
+    text-decoration: none; font-weight: 700; font-size: var(--text-sm); line-height: var(--leading-label);
+    padding: var(--sp-4) var(--sp-6); border-radius: var(--radius-pill); border: var(--bw-strong) solid var(--ink);
+    cursor: pointer; transition: background var(--dur-1), color var(--dur-1), border-color var(--dur-1), transform var(--dur-1);
+  }
+  .btn:hover { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); transform: translateY(-2px); }
+  .btn .arr { transition: transform var(--dur-1); }
+  .btn:hover .arr { transform: translateX(4px); }
+  .btn-ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+  .btn-ghost:hover { background: var(--ink); border-color: var(--ink); color: var(--paper); transform: translateY(-2px); }
+
+  /* ==========================================================
+     HEADER
+     ========================================================== */
+  .site-header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    transition: background var(--dur-2), box-shadow var(--dur-2);
+  }
+  .site-header.scrolled {
+    background: rgba(238, 240, 244, 0.88);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 var(--bw) 0 var(--line);
+  }
+  .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: var(--header-h); }
+  .brand { font-weight: 900; font-size: var(--text-base); letter-spacing: var(--track-tight); text-decoration: none; color: var(--ink); }
+  .brand sup { color: var(--accent); font-size: 0.6em; }
+  .header-nav { display: none; gap: var(--sp-6); }
+  .header-nav a { text-decoration: none; color: var(--ink-soft); font-size: var(--text-sm); font-weight: 600; transition: color var(--dur-1); }
+  .header-nav a:hover { color: var(--accent); }
+  .header-cta {
+    font-family: var(--mono); font-size: var(--text-2xs); text-transform: uppercase; letter-spacing: var(--track-caps);
+    line-height: var(--leading-label);
+    text-decoration: none; color: var(--paper); background: var(--ink);
+    padding: var(--sp-2) var(--sp-4); border-radius: var(--radius-pill); transition: background var(--dur-1);
+  }
+  .header-cta:hover { background: var(--accent); color: var(--accent-ink); }
+
+  /* ==========================================================
+     HERO
+     ========================================================== */
+  .hero { padding: calc(var(--header-h) + var(--sp-9)) 0 0; position: relative; }
+  .hero-grid { display: grid; grid-template-columns: 1fr; gap: var(--sp-8); align-items: end; }
+  .hero-meta { display: flex; flex-wrap: wrap; gap: var(--sp-2) var(--sp-5); margin-bottom: var(--sp-6); color: var(--ink-soft); }
+  .hero-meta .dot { color: var(--accent); }
+  .hero h1 { text-transform: uppercase; }
+  .hero h1 .serif-it { text-transform: none; font-size: 1.05em; color: var(--ink); }
+  .hero h1 .outline { color: transparent; -webkit-text-stroke: 2px var(--ink); }
+  .hero-sub { margin-top: var(--sp-6); font-size: var(--text-lg); color: var(--ink-soft); max-width: 46ch; }
+  .hero-ctas { margin-top: var(--sp-6); display: flex; flex-wrap: wrap; gap: var(--sp-3); align-items: center; }
+  .hero-note { margin-top: var(--sp-4); color: var(--ink-faint); font-size: var(--text-sm); }
+  .hero-figure { position: relative; margin: 0; }
+  .hero-figure img { width: 100%; max-width: 520px; margin: 0 auto; filter: saturate(0.94); }
+  .hero-figure figcaption {
+    position: absolute; bottom: var(--sp-4); left: 50%; transform: translateX(-50%);
+    font-family: var(--mono); font-size: var(--text-2xs); letter-spacing: var(--track-caps); text-transform: uppercase;
+    line-height: var(--leading-label);
+    color: var(--ink-soft); background: rgba(238, 240, 244, 0.85); padding: var(--sp-2) var(--sp-3); border-radius: var(--radius-pill);
+    white-space: nowrap;
+  }
+
+  /* ==========================================================
+     MARQUEE
+     ========================================================== */
+  .marquee {
+    border-top: var(--bw-strong) solid var(--ink);
+    border-bottom: var(--bw-strong) solid var(--ink);
+    overflow: hidden; padding: var(--sp-4) 0; background: var(--paper);
+    display: flex;
+  }
+  .marquee-track { display: flex; flex-shrink: 0; align-items: center; animation: marquee 28s linear infinite; }
+  .marquee span {
+    font-family: var(--mono); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: var(--track-caps-wide);
+    white-space: nowrap; padding: 0 var(--sp-6); color: var(--ink);
+  }
+  .marquee .star { color: var(--accent); padding: 0; }
+  @keyframes marquee { to { transform: translateX(-100%); } }
+
+  /* ==========================================================
+     KUNDEN
+     ========================================================== */
+  .clients { padding: var(--section-y-sm) 0; }
+  .clients-label { color: var(--ink-faint); margin-bottom: var(--sp-5); }
+  .clients-grid { display: grid; grid-template-columns: 1fr; border-top: var(--bw) solid var(--line); }
+  .client {
+    display: grid; grid-template-columns: auto 1fr auto; gap: var(--sp-5); align-items: center;
+    padding: var(--sp-5) 0; border-bottom: var(--bw) solid var(--line);
+  }
+  .client .idx { font-family: var(--mono); font-size: var(--text-2xs); color: var(--accent); }
+  .client .logo { color: var(--ink); opacity: 0.82; transition: color var(--dur-1), opacity var(--dur-1); }
+  .client:hover .logo { color: var(--accent); opacity: 1; }
+  .client .logo svg { height: 26px; width: auto; display: block; }
+  .client.logo-pwc .logo svg { height: 46px; }
+  .client.logo-maku .logo svg { height: 22px; }
+  .client .role { font-family: var(--mono); font-size: var(--text-2xs); text-transform: uppercase; letter-spacing: var(--track-caps); color: var(--ink-faint); text-align: right; }
+
+  /* ==========================================================
+     ANSATZ
+     ========================================================== */
+  .pain-rows { margin-top: var(--sp-8); border-top: var(--bw) solid var(--line); counter-reset: pain; }
+  .pain-rows li {
+    list-style: none; counter-increment: pain;
+    display: grid; grid-template-columns: auto 1fr; gap: var(--sp-4); align-items: baseline;
+    padding: var(--sp-5) 0; border-bottom: var(--bw) solid var(--line);
+    font-size: var(--text-lg); color: var(--ink-soft);
+  }
+  .pain-rows li::before {
+    content: "0" counter(pain);
+    font-family: var(--mono); font-size: var(--text-xs); color: var(--accent); letter-spacing: var(--track-caps);
+  }
+  .pain-close { margin-top: var(--sp-6); font-size: var(--text-xl); line-height: var(--leading-title); max-width: 52ch; }
+  .pain-close .serif-it { font-size: 1.1em; }
+
+  /* ==========================================================
+     LEISTUNGEN (dunkel)
+     ========================================================== */
+  .dark-section { background: var(--inv-bg); color: var(--inv-text); --accent: var(--accent-bright); }
+  .dark-section .sec-head .rule { background: var(--inv-line); }
+  .dark-section .section-intro { color: var(--inv-text-soft); }
+  .svc-rows { margin-top: var(--sp-8); border-top: var(--bw) solid var(--inv-line); }
+  .svc {
+    display: grid; grid-template-columns: 1fr; gap: var(--sp-3);
+    padding: var(--sp-6) 0; border-bottom: var(--bw) solid var(--inv-line);
+    position: relative; transition: padding-left var(--dur-1) ease;
+  }
+  .svc:hover { padding-left: var(--sp-4); }
+  .svc::after {
+    content: ""; position: absolute; left: 0; top: 0; width: 0; height: 100%;
+    border-left: 3px solid var(--accent); opacity: 0; transition: opacity var(--dur-1);
+  }
+  .svc:hover::after { opacity: 1; }
+  .svc-top { display: flex; align-items: baseline; gap: var(--sp-4); flex-wrap: wrap; }
+  .svc-top .idx { font-family: var(--mono); font-size: var(--text-xs); color: var(--accent); letter-spacing: var(--track-caps); }
+  .svc-top .tool {
+    font-family: var(--mono); font-size: var(--text-2xs); text-transform: uppercase; letter-spacing: var(--track-caps);
+    line-height: var(--leading-label);
+    color: var(--inv-text-soft); border: var(--bw) solid var(--inv-line); padding: var(--sp-1) var(--sp-3); border-radius: var(--radius-pill);
+  }
+  .svc h3 { font-size: var(--text-2xl); text-transform: uppercase; letter-spacing: var(--track-tight); }
+  .svc p { color: var(--inv-text-soft); max-width: 62ch; font-size: var(--text-base); }
+
+  /* ==========================================================
+     PROJEKTE
+     ========================================================== */
+  .proj-grid { margin-top: var(--sp-8); display: grid; grid-template-columns: 1fr; gap: var(--sp-4); }
+  .proj {
+    background: var(--surface);
+    border: var(--bw) solid var(--line);
+    padding: var(--sp-6) var(--sp-5);
+    display: flex; flex-direction: column; gap: var(--sp-4);
+    position: relative; overflow: hidden;
+    transition: transform var(--dur-1) ease, box-shadow var(--dur-1) ease;
+  }
+  .proj:hover { transform: translateY(-4px); box-shadow: var(--shadow-lift); }
+  .proj .big-idx {
+    position: absolute; top: -0.2em; right: 0.05em;
+    font-size: var(--text-5xl); font-weight: 900; letter-spacing: var(--track-display);
+    color: transparent; -webkit-text-stroke: 1.5px var(--paper-deep);
+    line-height: 1; pointer-events: none;
+  }
+  .proj .tags { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+  .proj .tags span {
+    font-family: var(--mono); font-size: var(--text-2xs); text-transform: uppercase; letter-spacing: var(--track-caps);
+    line-height: var(--leading-label);
+    color: var(--ink-soft); border: var(--bw) solid var(--line); padding: var(--sp-1) var(--sp-2); border-radius: var(--radius-pill);
+  }
+  .proj h3 { max-width: 20ch; }
+  .proj p { color: var(--ink-soft); font-size: var(--text-base); max-width: 58ch; }
+  .proj .result {
+    margin-top: auto; padding-top: var(--sp-3); border-top: var(--bw) solid var(--paper-deep);
+    font-size: var(--text-sm); color: var(--ink); display: flex; gap: var(--sp-2); align-items: baseline;
+  }
+  .proj .result::before { content: "→"; color: var(--accent); font-weight: 700; }
+  .more-projects { margin-top: var(--sp-6); color: var(--ink-soft); font-size: var(--text-sm); max-width: 74ch; }
+  .more-projects strong { color: var(--ink); }
+
+  /* ==========================================================
+     TESTIMONIAL (dunkel)
+     ========================================================== */
+  .testimonial { background: var(--inv-bg); color: var(--inv-text); --accent: var(--accent-bright); padding: var(--section-y) 0; }
+  .testimonial-label { color: var(--accent); margin-bottom: var(--sp-2); }
+  .testimonial-intro { color: var(--inv-text-soft); font-size: var(--text-lg); max-width: 54ch; margin-bottom: var(--sp-8); }
+  .testimonial-card { margin: 0; position: relative; max-width: 940px; }
+  .quote-mark {
+    font-family: var(--serif); font-style: italic; color: var(--accent);
+    font-size: clamp(3.5rem, 10vw, 5.5rem); line-height: 0.8; display: block; margin-bottom: var(--sp-1);
+  }
+  .testimonial-quote {
+    font-size: var(--text-2xl); line-height: var(--leading-title); font-weight: 500;
+    letter-spacing: var(--track-tight); color: var(--inv-text); max-width: 42ch;
+  }
+  .testimonial-quote .serif-it { font-size: 1.08em; color: var(--accent); }
+  .testimonial-author { display: flex; align-items: center; gap: var(--sp-4); margin-top: var(--sp-7); }
+  .author-avatar {
+    width: 72px; height: 72px; border-radius: 50%; object-fit: cover; object-position: center top;
+    background: var(--paper); flex-shrink: 0; border: 2px solid var(--inv-line-soft);
+  }
+  .author-meta { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+  .author-name { font-weight: 700; font-size: var(--text-lg); letter-spacing: var(--track-tight); color: var(--inv-text); }
+  .author-role { font-family: var(--mono); font-size: var(--text-2xs); text-transform: uppercase; letter-spacing: 0.08em; line-height: 1.5; color: var(--inv-text-soft); }
+  .author-logo { display: none; flex-shrink: 0; color: var(--inv-text-soft); }
+  .author-logo svg { height: 24px; width: auto; display: block; }
+  .tcard-grid { display: grid; grid-template-columns: 1fr; gap: var(--sp-4); margin-top: var(--sp-8); }
+  .tcard {
+    background: var(--inv-surface); border: var(--bw) solid var(--inv-line);
+    padding: var(--sp-6); margin: 0; display: flex; flex-direction: column; gap: var(--sp-4);
+  }
+  .tcard-source {
+    align-self: flex-start; font-family: var(--mono); font-size: var(--text-2xs);
+    text-transform: uppercase; letter-spacing: var(--track-caps); color: var(--inv-text-faint);
+    border: var(--bw) solid var(--inv-line); padding: 4px 10px; border-radius: var(--radius-pill);
+  }
+  .tcard blockquote { font-size: var(--text-lg); line-height: var(--leading-title); color: var(--inv-text); letter-spacing: var(--track-tight); }
+  .tcard-foot { margin-top: auto; display: flex; flex-direction: column; align-items: flex-start; gap: var(--sp-3); padding-top: var(--sp-5); border-top: var(--bw) solid var(--inv-line); }
+  .tcard-logo { color: var(--inv-text); }
+  .tcard-logo svg { height: 20px; width: auto; display: block; }
+  .tcard-logo.is-pwc svg { height: 30px; }
+  .tcard-cite { display: flex; flex-direction: column; gap: 1px; }
+  .tcard-name { font-weight: 600; font-size: var(--text-sm); color: var(--inv-text); font-style: normal; }
+  .tcard-role { font-size: var(--text-xs); color: var(--inv-text-soft); }
+  @media (min-width: 720px) { .tcard-grid { grid-template-columns: 1fr 1fr; gap: var(--sp-5); } }
+
+  /* ==========================================================
+     ARBEITSWEISE
+     ========================================================== */
+  .steps { margin-top: var(--sp-8); display: grid; grid-template-columns: 1fr; border-top: var(--bw) solid var(--line); }
+  .step { padding: var(--sp-7) 0; border-bottom: var(--bw) solid var(--line); }
+  .step .num {
+    font-size: var(--text-5xl); font-weight: 900; line-height: 1; letter-spacing: var(--track-display);
+    color: transparent; -webkit-text-stroke: 2px var(--ink);
+  }
+  .step h3 { text-transform: uppercase; margin: var(--sp-4) 0 var(--sp-2); }
+  .step p { color: var(--ink-soft); font-size: var(--text-base); max-width: 40ch; }
+
+  /* ==========================================================
+     UEBER MICH
+     ========================================================== */
+  .about { background: var(--paper-deep); }
+  .about .sec-head .rule { background: var(--line); }
+  .about-grid { margin-top: var(--sp-8); display: grid; grid-template-columns: 1fr; gap: var(--sp-7); align-items: start; }
+  .about-figure { margin: 0; position: relative; }
+  .about-figure img { width: 100%; }
+  .about-figure figcaption {
+    margin-top: var(--sp-3);
+    font-family: var(--mono); font-size: var(--text-2xs); letter-spacing: var(--track-caps); text-transform: uppercase; color: var(--ink-faint);
+    display: flex; justify-content: space-between;
+  }
+  .about-text p { color: var(--ink-soft); margin-bottom: var(--sp-4); }
+  .about-text p.lead {
+    color: var(--ink); font-size: var(--text-2xl); line-height: var(--leading-title);
+    font-weight: 500; letter-spacing: var(--track-tight); margin-bottom: var(--sp-5);
+  }
+  .about-text p.lead .serif-it { font-size: 1.1em; }
+
+  .timeline { border-top: var(--bw) solid var(--line); }
+  .tl-row { display: grid; grid-template-columns: 1fr; gap: var(--sp-1); padding: var(--sp-5) 0; border-bottom: var(--bw) solid var(--line); }
+  .tl-row time { font-family: var(--mono); font-size: var(--text-xs); letter-spacing: var(--track-caps); text-transform: uppercase; color: var(--accent); }
+  .tl-row h3 { font-size: var(--text-lg); }
+  .tl-row p { color: var(--ink-soft); font-size: var(--text-sm); max-width: 60ch; }
+  .tl-label { margin-top: var(--sp-9); }
+
+  /* ==========================================================
+     KONTAKT (dunkel)
+     ========================================================== */
+  .contact { background: var(--inv-bg); color: var(--inv-text); padding: var(--section-y) 0; --accent: var(--accent-bright); }
+  .contact .sec-head .rule { background: var(--inv-line); }
+  .contact h2 { font-size: var(--text-5xl); }
+  .contact h2 .serif-it { color: var(--accent); }
+  .contact .section-intro { color: var(--inv-text-soft); }
+  .contact-grid { margin-top: var(--sp-8); display: grid; grid-template-columns: 1fr; gap: var(--sp-8); }
+  .field { margin-bottom: var(--sp-6); }
+  .field label {
+    display: block; font-family: var(--mono); font-size: var(--text-2xs); text-transform: uppercase;
+    letter-spacing: var(--track-caps); margin-bottom: var(--sp-2); color: var(--inv-text-soft);
+  }
+  .field input, .field textarea {
+    width: 100%; background: transparent; border: none; border-bottom: var(--bw-strong) solid var(--inv-line);
+    color: var(--inv-text); font: inherit; font-size: var(--text-lg); padding: var(--sp-2) 0; border-radius: 0;
+    transition: border-color var(--dur-1);
+  }
+  .field input:focus-visible, .field textarea:focus-visible { outline: none; }
+  .field input:focus, .field textarea:focus { border-bottom-color: var(--accent); }
+  .field input::placeholder, .field textarea::placeholder { color: #565a66; }
+  .field textarea { min-height: 110px; resize: vertical; }
+  .contact .btn { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+  .contact .btn:hover { background: var(--accent); border-color: var(--accent); color: var(--ink); }
+  .contact-aside p { color: var(--inv-text-soft); font-size: var(--text-base); margin-bottom: var(--sp-4); max-width: 34ch; }
+  .contact-aside .mail {
+    display: inline-block; font-size: var(--text-xl); font-weight: 700; letter-spacing: var(--track-tight);
+    color: var(--inv-text); text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; margin-bottom: var(--sp-5);
+  }
+  .contact-aside .mail:hover { color: var(--accent); }
+
+  /* ==========================================================
+     FOOTER
+     ========================================================== */
+  .site-footer { background: var(--inv-bg); border-top: var(--bw) solid var(--inv-line); padding: var(--sp-8) 0 var(--sp-6); color: var(--inv-text-faint); --accent: var(--accent-bright); }
+  .footer-name {
+    font-size: var(--text-display); font-weight: 900; letter-spacing: var(--track-display); line-height: var(--leading-none);
+    text-transform: uppercase; color: transparent; -webkit-text-stroke: 1.5px var(--inv-line-soft);
+    user-select: none; margin-bottom: var(--sp-6);
+  }
+  .footer-row {
+    display: flex; flex-wrap: wrap; gap: var(--sp-2) var(--sp-5); justify-content: space-between;
+    font-family: var(--mono); font-size: var(--text-2xs); text-transform: uppercase; letter-spacing: var(--track-caps);
+  }
+  .footer-links { display: flex; gap: var(--sp-4); }
+  .footer-links a { color: var(--inv-text-faint); text-decoration: none; transition: color var(--dur-1); }
+  .footer-links a:hover { color: var(--accent); }
+
+  /* ==========================================================
+     BREAKPOINTS
+     ========================================================== */
+  @media (min-width: 720px) {
+    .author-logo { display: block; margin-left: var(--sp-4); }
+    .client .logo svg { height: 34px; }
+    .client.logo-pwc .logo svg { height: 58px; }
+    .client.logo-maku .logo svg { height: 29px; }
+    .steps { grid-template-columns: repeat(3, 1fr); gap: 0 var(--sp-7); border-bottom: var(--bw) solid var(--line); padding-bottom: var(--sp-7); }
+    .step { border-bottom: none; padding-bottom: 0; }
+    .proj-grid { grid-template-columns: 1fr 1fr; gap: var(--sp-5); }
+    .proj { padding: var(--sp-7) var(--sp-6); }
+    .tl-row { grid-template-columns: 180px 1fr; gap: var(--sp-1) var(--sp-6); }
+    .tl-row p { grid-column: 2; }
+    .contact-grid { grid-template-columns: 1.2fr 1fr; gap: var(--sp-10); }
+  }
+  @media (min-width: 980px) {
+    .header-nav { display: flex; }
+    .hero { padding-top: calc(var(--header-h) + var(--sp-10)); }
+    .hero-grid { grid-template-columns: minmax(0, 1fr) clamp(400px, 36vw, 480px); gap: var(--sp-8); }
+    .hero-figure img { max-width: none; margin: 0; }
+    .clients-grid { grid-template-columns: 1fr 1fr; column-gap: var(--sp-10); }
+    .about-grid { grid-template-columns: 1fr 1.1fr; gap: var(--sp-10); }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://pascal-kuptz.github.io/berkay-portfolio/#berkay",
+      "name": "Berkay Sevgili",
+      "jobTitle": "Automation Engineer",
+      "description": "Automation Engineer aus Zürich. Automatisiert wiederkehrende Prozesse mit UiPath, Microsoft Power Platform und Copilot Studio, von der Analyse bis zum Betrieb.",
+      "url": "https://pascal-kuptz.github.io/berkay-portfolio/",
+      "image": "https://pascal-kuptz.github.io/berkay-portfolio/assets/portrait.jpg",
+      "email": "kontakt@berkay-sevgili.ch",
+      "knowsAbout": ["UiPath", "Robotic Process Automation", "Microsoft Power Platform", "Power Apps", "Power Automate", "Copilot Studio", "Citizen Development", "Prozessautomatisierung", "Governance"],
+      "knowsLanguage": ["Deutsch", "Englisch"],
+      "address": { "@type": "PostalAddress", "addressLocality": "Zürich", "addressRegion": "ZH", "addressCountry": "CH" },
+      "worksFor": { "@type": "Organization", "name": "Migros" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "ZHAW Zürcher Hochschule für Angewandte Wissenschaften" },
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Automation Engineer",
+        "occupationLocation": { "@type": "City", "name": "Zürich" },
+        "skills": "UiPath, RPA, Power Apps, Power Automate, Copilot Studio, Citizen Development, Governance"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://pascal-kuptz.github.io/berkay-portfolio/#website",
+      "url": "https://pascal-kuptz.github.io/berkay-portfolio/",
+      "name": "Berkay Sevgili | Portfolio",
+      "inLanguage": "de-CH",
+      "about": { "@id": "https://pascal-kuptz.github.io/berkay-portfolio/#berkay" }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://pascal-kuptz.github.io/berkay-portfolio/#service",
+      "name": "Prozessautomatisierung und Low-Code-Entwicklung",
+      "description": "Automatisierung wiederkehrender Prozesse mit UiPath und Microsoft Power Platform, KI-Assistenten mit Copilot Studio sowie Aufbau von Citizen-Development-Programmen mit Governance.",
+      "url": "https://pascal-kuptz.github.io/berkay-portfolio/",
+      "image": "https://pascal-kuptz.github.io/berkay-portfolio/assets/portrait.jpg",
+      "provider": { "@id": "https://pascal-kuptz.github.io/berkay-portfolio/#berkay" },
+      "areaServed": { "@type": "Country", "name": "Schweiz" },
+      "serviceType": ["Prozessautomatisierung", "Robotic Process Automation", "Microsoft Power Platform", "KI-Assistenten", "Citizen Development"],
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "bestRating": "5", "ratingCount": "3", "reviewCount": "3" },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Pascal Kuptz", "jobTitle": "CEO & Founder", "worksFor": { "@type": "Organization", "name": "maku consulting GmbH" } },
+          "reviewBody": "Die Zusammenarbeit mit Berkay kann ich jedem Unternehmen empfehlen. Er überzeugt durch seine Expertise und eine genaue, beratende Arbeitsweise. Dazu kommt eine hervorragende Dokumentation und ein echtes Gespür dafür, wie entscheidend User Adoption ist. Berkay baut Lösungen, die im Alltag wirklich ankommen."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Organization", "name": "PostFinance AG" },
+          "reviewBody": "Sein Beitrag war für die erfolgreiche Etablierung des Citizen Development Programms von besonderem Wert. Er überprüft Prozesse und Arbeitsabläufe kritisch, entwickelt kreative und gleichzeitig realisierbare Ideen für Verbesserungen und trägt entscheidend zu deren Umsetzung bei."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Organization", "name": "PricewaterhouseCoopers AG" },
+          "reviewBody": "Er verfügte über ein äusserst umfassendes und vertieftes Fachwissen, verbunden mit einer ausgesprochen grossen Erfahrung. Sowohl qualitativ als auch quantitativ erbrachte er jederzeit hervorragende Leistungen, die unseren hohen Anforderungen in jeder Hinsicht entsprachen."
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">BERKAY SEVGILI<sup>®</sup></a>
+    <nav class="header-nav" aria-label="Hauptnavigation">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#projekte">Projekte</a>
+      <a href="#arbeitsweise">Arbeitsweise</a>
+      <a href="#ueber-mich">Über mich</a>
+    </nav>
+    <a class="header-cta" href="#kontakt">Projekt anfragen</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-meta mono rv in">
+            <span>Automation Engineer</span>
+            <span class="dot">●</span>
+            <span>RPA &amp; Low-Code</span>
+          </div>
+          <h1 class="rv in rv-d1">
+            Prozesse,<br>
+            <span class="outline">die von</span> <span class="serif-it">allein</span><br>
+            laufen.
+          </h1>
+          <p class="hero-sub rv in rv-d2">Ich automatisiere wiederkehrende Abläufe mit UiPath, Power Platform und Copilot Studio. Von der Analyse bis zum Betrieb, so gebaut, dass dein Team die Lösung versteht und weiterentwickeln kann.</p>
+          <div class="hero-ctas rv in rv-d3">
+            <a class="btn" href="#kontakt">Projekt anfragen <span class="arr">→</span></a>
+            <a class="btn btn-ghost" href="#projekte">Projekte ansehen</a>
+          </div>
+          <p class="hero-note rv in rv-d3">Unverbindlich. Du bekommst innert zwei Arbeitstagen eine Antwort.</p>
+        </div>
+        <figure class="hero-figure rv in rv-d2">
+          <img src="assets/portrait.jpg" alt="Porträt von Berkay Sevgili" width="1100" height="1640" fetchpriority="high">
+          <figcaption>Berkay Sevgili</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>UiPath</span><span class="star">✦</span>
+      <span>Power Apps</span><span class="star">✦</span>
+      <span>Power Automate</span><span class="star">✦</span>
+      <span>Copilot Studio</span><span class="star">✦</span>
+      <span>RPA</span><span class="star">✦</span>
+      <span>Citizen Development</span><span class="star">✦</span>
+      <span>Governance</span><span class="star">✦</span>
+    </div>
+    <div class="marquee-track">
+      <span>UiPath</span><span class="star">✦</span>
+      <span>Power Apps</span><span class="star">✦</span>
+      <span>Power Automate</span><span class="star">✦</span>
+      <span>Copilot Studio</span><span class="star">✦</span>
+      <span>RPA</span><span class="star">✦</span>
+      <span>Citizen Development</span><span class="star">✦</span>
+      <span>Governance</span><span class="star">✦</span>
+    </div>
+  </div>
+
+  <!-- CLIENTS -->
+  <section class="clients">
+    <div class="wrap">
+      <p class="mono clients-label rv">Projekte umgesetzt bei</p>
+      <div class="clients-grid">
+        <div class="client rv">
+          <span class="idx">01</span>
+          <span class="logo">
+            <svg role="img" aria-label="Migros" viewBox="0 0 108 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.073 19.5V8.53L12.368 19.5H9.756L5.13 8.53V19.5H.268V.499h6.508l4.471 10.729L15.925.499h6.01V19.5zm8.601 0V.499h4.156c.366 0 .728.366.728.76V19.5zM44.047 8.56h6.175c.488 0 .766.398.766.865v9.817c-1.739.387-4.453.625-6.473.625-7.085 0-10.82-3.375-10.82-9.894 0-5.813 3.735-9.84 9.963-9.84 2.741 0 5.146.732 6.693 1.777l-1.914 3.269C47.1 4.58 45.295 4.16 44.021 4.16c-3.58 0-5.253 2.376-5.253 5.813 0 3.675 1.937 5.942 5.512 5.942.656 0 1.469-.025 2.119-.125v-3.35h-2.352zM65.426 19.5l-2.254-5.23c-.461-1.064-.782-1.594-1.76-1.594h-1.976V19.5h-4.775V1.259c0-.394.433-.76.743-.76h6.743c3.662 0 6.802.76 6.802 5.492 0 2.117-1.173 4.286-3.37 4.725 1.095.372 2.197 1.778 2.796 3.3l2.172 5.484zm-3.6-15.34h-2.39v4.765h2.39c1.428 0 2.551-.762 2.551-2.567 0-1.833-1.123-2.198-2.551-2.198m19.278 15.707c-6.222 0-9.513-4.395-9.513-9.894 0-5.448 3.291-9.84 9.513-9.84 5.826 0 9.121 4.392 9.121 9.84 0 5.5-3.295 9.894-9.121 9.894m0-15.707c-2.563 0-4.387 1.831-4.387 5.813 0 4.042 1.823 5.866 4.387 5.866 2.197 0 3.996-1.824 3.996-5.866 0-3.982-1.799-5.813-3.996-5.813M99.58 19.867c-3.211 0-6.195-1.152-7.525-2.066l2.165-3.84c1.208.73 3.558 1.855 5.726 1.855 1.227 0 2.776-.238 2.776-1.6 0-1.279-1.731-1.672-4.003-2.32-2.742-.787-5.934-1.878-5.934-5.566 0-3.975 3.531-6.197 8.127-6.197 3.034 0 5.385 1.074 6.585 2.222l-2.637 3.003c-1.306-.778-2.638-1.386-4.133-1.386-1.801 0-2.819.684-2.819 1.678 0 .986 1.307 1.489 2.951 1.983 2.906.896 6.873 1.813 6.873 5.62 0 3.921-3.133 6.614-8.152 6.614"/></svg>
+          </span>
+          <span class="role">Seit 2026</span>
+        </div>
+        <div class="client rv rv-d1">
+          <span class="idx">02</span>
+          <span class="logo">
+            <svg role="img" aria-label="PostFinance" viewBox="0 0 122 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16.8641 6.30447C16.6127 6.2861 16.3602 6.2861 16.1089 6.2861C13.6969 6.2861 11.5741 6.80892 9.85516 7.82518C11.2948 5.91388 12.0182 3.4063 11.9731 0.467724V0H6.50138L6.5087 0.539964C6.54408 2.53697 6.07682 4.03075 5.124 4.94783C3.88326 6.1355 1.87026 6.31549 0.395281 6.24325L0 6.22243V11.6821L0.215941 11.6955C0.467261 11.7139 0.719801 11.7139 0.971121 11.7139C3.38306 11.7139 5.50586 11.1911 7.22484 10.1748C5.78524 12.0861 5.06178 14.5937 5.10692 17.5323V18H10.5786L10.5713 17.46C10.5359 15.463 11.0032 13.9693 11.956 13.0522C13.1967 11.8645 15.2097 11.6845 16.6847 11.7568L17.08 11.7776V6.31794L16.8641 6.30447Z"/><path d="M30.4134 6.73914C30.4134 8.81328 28.9713 10.7295 26.4764 10.7295H23.6106V15.2586H21.35V2.7488H26.4862C28.9713 2.7488 30.4134 4.66622 30.4134 6.73914ZM23.6106 4.78254V8.69452H26.1446C27.3634 8.69452 28.0941 7.92192 28.1137 6.73792C28.0941 5.55392 27.3634 4.78132 26.1446 4.78132H23.6106V4.78254ZM56.0163 13.6252C54.7206 13.6252 54.2522 13.3118 54.2522 12.2171V8.02109H56.6104V6.16245H53.9496C54.3778 5.76084 54.7585 5.20373 54.6999 3.92301H52.6527C52.6527 4.03075 52.5454 6.00695 50.7227 6.79914V8.02232H52.1257V12.4437C52.1257 14.5668 53.4604 15.5047 55.5954 15.5047C55.9663 15.5047 56.3457 15.4851 56.7166 15.4263V13.5872C56.4726 13.6068 56.2493 13.6264 56.0151 13.6264L56.0163 13.6252ZM66.7242 2.75737H58.6832V15.2573H60.9536V10.1418H66.2948V8.12639H60.9536V4.80091H66.723V2.75615L66.7242 2.75737ZM70.4903 5.97511H68.3371V15.2671H70.4903V5.97511ZM72.5473 15.2684H74.7006V9.96668C74.7006 8.44107 75.8998 7.78601 76.8929 7.78601C77.7799 7.78601 78.4521 8.32352 78.4521 9.64466V15.2684H80.6054V9.38019C80.6054 7.10157 79.494 5.75105 77.3797 5.75105C76.1609 5.75105 74.9434 6.4061 74.5822 7.62928L74.4163 5.97634H72.5448V15.2684H72.5473ZM82.0877 10.6119C82.0877 8.22557 83.4712 5.76084 86.5321 5.76084C87.9351 5.76084 88.988 6.55303 89.1539 7.24727L89.3003 5.98491H91.1913V13.1354C91.1913 13.4195 91.3377 13.7513 91.9807 13.7415V15.3357L91.4939 15.3945C90.2361 15.4728 89.2039 14.7394 89.1551 13.8493V13.8297C88.8916 14.6904 87.7717 15.5022 86.5333 15.5022C83.4638 15.5022 82.0889 12.8612 82.0889 10.6119H82.0877ZM89.1051 10.896V10.1724C89.1051 8.60759 88.0327 7.74683 86.7273 7.74683C85.0608 7.74683 84.3105 9.29203 84.3105 10.6034C84.3105 11.9147 84.8363 13.4795 86.7273 13.4795C88.2767 13.4893 89.1051 12.3249 89.1051 10.8972V10.896ZM93.7399 5.97511V15.2671H95.8932V9.96545C95.8932 8.43984 97.0925 7.78478 98.0855 7.78478C98.9725 7.78478 99.6447 8.3223 99.6447 9.64343V15.2671H101.798V9.37896C101.798 7.10034 100.687 5.74982 98.5723 5.74982C97.3535 5.74982 96.136 6.40488 95.7748 7.62806L95.6089 5.97511H93.7375H93.7399ZM109.921 12.1375C109.53 13.3999 108.615 13.526 108.03 13.526C106.83 13.526 105.447 12.7436 105.447 10.6695C105.447 8.59534 106.85 7.77377 108.03 7.77377C108.643 7.77377 109.599 7.92069 109.901 9.16224L112.018 8.61616C111.595 6.85791 109.866 5.79757 108.041 5.79757C105.175 5.79757 103.334 7.99783 103.334 10.6487C103.334 13.2995 105.049 15.4802 108.031 15.4998C109.981 15.5181 111.396 14.4749 111.906 12.6518L109.922 12.1351L109.921 12.1375ZM121.728 12.8502C121.222 14.3856 119.915 15.5022 117.837 15.5022C114.933 15.5022 113.072 13.302 113.072 10.6315C113.072 7.81417 114.934 5.78043 117.692 5.78043C119.612 5.79023 122 6.95464 122 10.5238L121.98 11.1397H115.269C115.211 12.489 116.357 13.6436 117.819 13.6436C118.569 13.6436 119.447 13.4183 119.769 12.3432L121.729 12.8502H121.728ZM115.357 9.60425L119.782 9.59935C119.782 8.39576 118.852 7.53011 117.742 7.53011C116.484 7.53011 115.475 8.45943 115.358 9.60425H115.357ZM69.4778 4.53766C70.1402 4.53766 70.7063 3.99035 70.7063 3.32427C70.7063 2.65819 70.1414 2.11089 69.4778 2.11089C68.8348 2.11089 68.2687 2.65819 68.2687 3.32427C68.2687 3.99035 68.8336 4.53766 69.4778 4.53766ZM35.8131 5.68248C33.0351 5.68248 31.077 7.90233 31.077 10.5923C31.077 13.2824 33.0071 15.5022 35.8326 15.5022C38.6398 15.5022 40.5686 13.2628 40.5686 10.5923C40.5686 7.90233 38.6386 5.68248 35.8131 5.68248ZM35.8326 13.5664C34.3027 13.5664 33.0547 12.2367 33.0547 10.5838C33.0547 8.93083 34.3027 7.60112 35.8326 7.60112C37.3625 7.60112 38.6105 8.93083 38.6105 10.5838C38.6105 12.2367 37.3625 13.5664 35.8326 13.5664ZM45.9293 15.5022C48.3169 15.5022 49.9053 14.1921 49.9053 12.2453C49.9053 10.0646 47.9069 9.80995 46.2111 9.59446C44.9728 9.42794 43.8822 9.26142 43.8822 8.35169C43.8822 7.71622 44.4275 7.25584 45.5682 7.25584C46.7675 7.25584 47.4104 7.77376 47.6739 8.69329L49.7308 8.16558C49.3502 6.60078 48.035 5.46576 45.6573 5.46576C43.2502 5.46576 41.7008 6.62037 41.7008 8.56596C41.7008 10.7662 43.6796 11.0601 45.4047 11.3245C46.6723 11.5204 47.7044 11.6772 47.7044 12.5477C47.7044 13.242 47.0651 13.6901 45.9732 13.6901C44.8325 13.6901 43.9529 13.1844 43.6601 12.1375L41.5837 12.6751C42.0997 14.4456 43.7955 15.5022 45.9305 15.5022H45.9293Z"/></svg>
+          </span>
+          <span class="role">2022 bis 2026</span>
+        </div>
+        <div class="client logo-pwc rv rv-d1">
+          <span class="idx">03</span>
+          <span class="logo">
+            <svg role="img" aria-label="PwC" viewBox="0 0 70 53" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M51.7,30.3c-2.5.4-3.7,2.2-3.7,5.4s1.7,5.4,4.2,5.4,2.3-.4,4.6-1.5v2.6c-2.7,1.3-4.3,1.6-6.6,1.6s-4.1-.6-5.4-2c-1.4-1.4-2.1-3.3-2.1-5.3,0-4.6,3.4-7.7,8.4-7.7s5.6,1.5,5.6,3.7-1.1,2.4-2.6,2.4-1.5-.2-2.3-.7v-3.9h0ZM39.6,36.4c2.2-2.8,3-3.9,3-5.3s-1.1-2.5-2.5-2.5-1.7.4-2.1.9v5.7l-3.6,4.8v-11h-3.4l-5.7,9.5v-9.5h-2l-5.2,1.3v1.3l2.8.3v11.6h3.7l5.5-9v9h4l5.6-7.1h-.1ZM7.2,32c.8,0,1.3-.2,1.7-.2,2.4,0,3.7,1.6,3.7,4.6s-1.6,5.4-4.5,5.4-.4,0-.8,0v-9.7h0ZM7.2,43.4c.9,0,1.9,0,2.4,0,4.9,0,8-3.1,8-7.8s-2.3-6.9-5.5-6.9-2.3.3-4.9,1.9v-1.9h-1.5l-5.7,1.7v1.4h2.4v16.2l-2.1.5v1.3h9.3v-1.3l-2.4-.5v-4.7h0Z"/><path d="M49.1,24.8h-15.5l2.6-4.4h15.5l-2.6,4.4ZM69.9,16h-15.5l-2.6,4.4h15.5l2.6-4.4Z"/></svg>
+          </span>
+          <span class="role">2022</span>
+        </div>
+        <div class="client logo-maku rv rv-d2">
+          <span class="idx">04</span>
+          <span class="logo">
+            <svg role="img" aria-label="maku consulting" viewBox="0 0 872 200" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M253.906 0.445312C271.502 0.445327 285.365 6.01389 294.833 16.292C304.305 26.5751 309.431 41.6294 309.431 60.6992V157.662H309.457C309.526 165.865 311.495 172.25 315.478 176.806C319.534 181.446 325.622 184.124 333.72 184.949H333.724L341.959 185.728V195.462H243.257V185.723L250.272 184.948C257.767 184.121 263.344 181.437 267.038 176.789C270.724 172.151 272.481 165.624 272.481 157.217V63.5264C272.481 51.4386 269.165 41.8469 262.892 35.2754C256.615 28.7011 247.434 25.2081 235.824 25.208C219.152 25.208 202.153 35.9331 189.355 54.3232L189.24 54.4893L189.289 54.6846C189.478 55.4532 189.577 56.6387 189.627 58.0664C189.677 59.4852 189.677 61.1066 189.677 62.7324V157.217C189.677 165.634 191.646 172.168 195.7 176.806C199.757 181.446 205.845 184.124 213.943 184.949H213.946L222.183 185.728V195.462H123.48V185.723L130.496 184.948C137.99 184.121 143.567 181.437 147.261 176.789C150.947 172.151 152.704 165.624 152.704 157.217V63.5264C152.704 51.4386 149.389 41.8469 143.115 35.2754C136.839 28.7009 127.657 25.208 116.047 25.208C98.9971 25.2081 81.5905 35.0685 70.0029 51.8721L69.9238 51.9863V157.24C69.9239 165.647 71.6813 172.174 75.3672 176.812C79.0608 181.46 84.6382 184.145 92.1328 184.972L99.1484 185.746V195.484H0.445312V185.751L8.68164 184.973H8.68457C16.783 184.148 22.8708 181.47 26.9277 176.829C30.9824 172.191 32.9511 165.658 32.9512 157.24V47.6621C32.9511 42.135 32.228 38.4388 29.3965 35.1602C26.6002 31.9224 21.7805 29.1363 13.7666 25.2754L13.7627 25.2734L5.40332 21.3516V17.4941L69.9238 0.970703V23.8955L57.2617 41.3027L57.1768 41.4199V55.5703L57.9844 54.4404L64.9717 44.6748L64.9727 44.6729C85.4875 15.813 110.062 0.46875 134.153 0.46875C158.209 0.468872 176.076 11.7071 183.041 31.3184L175.352 42.9541L175.277 43.0664V57.2764L176.093 56.0654L183.505 45.0615L183.508 45.0576C201.96 17.0349 228.581 0.445312 253.906 0.445312Z"/><path d="M424.124 0.869141C426.736 0.869146 429.254 0.939418 431.724 1.0791H431.726C450.93 2.08075 466.049 6.98796 476.751 15.4521C487.442 23.9083 493.765 35.9472 495.324 51.3086L495.325 51.3164L495.326 51.3232C495.42 52.0161 495.487 52.6712 495.487 53.3662V53.3877L495.489 53.4092C495.56 54.1584 495.629 54.9094 495.629 55.6797V55.6895L495.63 55.6992C495.655 56.2602 495.7 56.8137 495.7 57.3623V139.441H495.771V157.22C495.771 163.01 496.698 167.94 498.646 171.966V171.967C502.176 179.403 509.045 183.63 519.209 184.854L519.518 184.955C519.718 185.021 519.911 185.023 520.027 185.023L528.253 185.802V195.535H475.366C465.789 191.731 460.253 183.622 459.935 172.064L469.326 157.508L469.397 157.397V144.803L468.582 146.013L464.475 152.111C462.164 155.542 459.925 158.761 457.757 161.746C450.852 171.169 444.5 178.409 438.322 183.896L438.32 183.896C435.128 186.754 431.984 189.122 428.867 191.094C418.989 197.303 409.113 199.554 397.756 199.554C388.333 199.554 379.982 198.158 372.816 195.516H372.817C354.143 188.599 343.482 172.98 343.482 151.542C343.482 140.802 345.734 132.198 350.974 124.893C356.056 117.808 363.98 111.902 375.5 106.468L376.626 105.943C382.085 103.428 388.325 101.004 395.443 98.6016L395.442 98.6006L458.47 77.5508L458.469 77.5498L458.822 77.4346L459.129 77.333V58.2734C459.129 45.5564 455.295 34.9511 448.52 27.5205C441.741 20.0861 432.051 15.8653 420.418 15.8652C409.667 15.8652 399.616 18.1198 391.98 21.9766C384.357 25.8272 379.065 31.319 378.006 37.8281L377.922 38.3457H390.794C391.932 47.3965 390.869 54.2812 388.281 59.2168C385.668 64.2016 381.481 67.2378 376.332 68.5176L376.331 68.5186C374.412 68.9991 372.371 69.2295 370.208 69.2295C360.211 69.2295 351.32 60.4823 351.32 48.4834C351.32 39.3476 356.334 29.7387 365.176 21.5449C377.997 9.66736 398.894 0.869141 424.124 0.869141ZM458.236 89.7412L458.23 89.7441L416.188 104.276L416.183 104.278C403.186 108.972 394.148 114.091 388.363 120.742C382.564 127.41 380.078 135.568 380.078 146.238C380.078 155.903 383.197 164.063 388.742 169.81C394.203 175.469 401.983 178.751 411.355 178.852V178.88H411.802C429.165 178.88 447.178 165.128 458.76 145.437L458.821 145.333V145.214L459.176 90.0508L459.18 89.4307L458.591 89.625L458.236 89.7412Z"/><path d="M839.022 157.218C839.022 163.008 839.95 167.938 841.898 171.964V171.965C845.474 179.497 852.475 183.739 862.856 184.899C863.03 184.946 863.192 184.95 863.297 184.95V184.951L864.281 185.033V185.052L864.684 185.091L871.528 185.753V195.486H818.642C809.602 191.892 804.191 184.454 803.337 173.933L814.712 158.298L814.798 158.181V144.03L813.989 145.159L811.864 148.127L811.863 148.128L806.175 156.142L806.173 156.144C792.192 176.072 769.694 199.528 736.995 199.528C718.777 199.528 704.707 193.653 695.188 183.22C685.663 172.781 680.645 157.724 680.645 139.274V47.6406C680.645 42.1134 679.921 38.4174 677.09 35.1387C674.294 31.9008 669.474 29.1139 661.46 25.2529L661.456 25.251L653.072 21.3291V17.4727L717.617 0.97168V136.447C717.617 147.513 720.516 157.101 726.682 163.927C732.854 170.761 742.245 174.766 755.101 174.766C775.88 174.766 792.453 161.61 801.969 148.105L802.05 147.99V47.6406C802.05 42.1133 801.327 38.4174 798.495 35.1387C795.699 31.9008 790.88 29.1139 782.866 25.2529L782.861 25.251L774.313 21.2588V17.5195L839.022 0.97168V157.218Z"/><path d="M639.84 4.92969V13.9248C619.7 18.8727 596.767 30.6478 582.779 44.4893L553.555 72.5967L553.245 72.8945L553.532 73.2148L630.508 159.171L630.514 159.179C645.489 175.185 654.98 182.768 671.351 186.494V195.46H612.323L527.454 98.2549L527.145 97.9004L526.808 98.2285L507.711 116.814V100.093L566.112 43.8975L566.113 43.8984C573.54 36.9579 577.066 30.2114 576.583 24.957C576.339 22.3069 575.076 20.0657 572.834 18.4199C570.605 16.7839 567.432 15.7497 563.371 15.4414L555.537 14.6641V4.92969H639.84Z"/></svg>
+          </span>
+          <span class="role">Projekt</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIN -->
+  <section class="section section--tight" id="ansatz">
+    <div class="wrap">
+      <div class="sec-head rv"><span class="idx">01 / Wo ich ansetze</span><span class="rule"></span></div>
+      <h2 class="rv">Kommt dir das <span class="serif-it">bekannt</span> vor?</h2>
+      <ul class="pain-rows">
+        <li class="rv">Daten werden von Hand aus einem System ins nächste kopiert, jede Woche wieder.</li>
+        <li class="rv">Genehmigungen laufen per Mail-Pingpong und keiner weiss, wo der Antrag gerade steckt.</li>
+        <li class="rv">Ein wichtiges System hat keine Schnittstelle, also klickt sich jemand jeden Morgen durch Reports.</li>
+        <li class="rv">Excel-Listen ersetzen Prozesse, bis niemand mehr weiss, welche Version stimmt.</li>
+      </ul>
+      <p class="pain-close rv">Genau dort schaue ich hin. Mit Interesse für die Logik dahinter und mit Lösungen, die sich im Alltag durchsetzen. Manchmal heisst die ehrliche Antwort auch: <span class="serif-it">Das lohnt sich nicht zu automatisieren.</span></p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section dark-section" id="leistungen">
+    <div class="wrap">
+      <div class="sec-head rv"><span class="idx">02 / Leistungen</span><span class="rule"></span></div>
+      <h2 class="rv">Was ich für dich <span class="serif-it">baue</span></h2>
+      <div class="svc-rows">
+        <div class="svc rv">
+          <div class="svc-top"><span class="idx">01</span><span class="tool">UiPath</span></div>
+          <h3>Prozessautomatisierung</h3>
+          <p>Wiederkehrende Aufgaben übernimmt der Roboter, auch bei Systemen ohne Schnittstelle. Dokumentenversand, Datenübernahmen, Report-Verarbeitung, inklusive Monitoring für den stabilen Betrieb.</p>
+        </div>
+        <div class="svc rv">
+          <div class="svc-top"><span class="idx">02</span><span class="tool">Power Apps</span></div>
+          <h3>Business-Apps</h3>
+          <p>Massgeschneiderte Apps statt Excel-Listen: Anträge erfassen, Prozesse steuern, Entscheidungen mit Auswertungen unterlegen. In Wochen einsatzbereit, nicht in Monaten.</p>
+        </div>
+        <div class="svc rv">
+          <div class="svc-top"><span class="idx">03</span><span class="tool">Power Automate</span></div>
+          <h3>Genehmigungsflows</h3>
+          <p>Klare digitale Abläufe für Freigaben, Weiterleitungen und Dokumente. Jeder sieht, wo ein Antrag steht, und am Ende liegt das PDF dort, wo es hingehört.</p>
+        </div>
+        <div class="svc rv">
+          <div class="svc-top"><span class="idx">04</span><span class="tool">Copilot Studio</span></div>
+          <h3>KI-Assistenten</h3>
+          <p>Agenten, die Fragen beantworten, Inhalte aufbereiten und Routinekommunikation übernehmen. Für Schulung, Support und interne Prozesse.</p>
+        </div>
+        <div class="svc rv">
+          <div class="svc-top"><span class="idx">05</span><span class="tool">Beratung &amp; Enablement</span></div>
+          <h3>Citizen Development</h3>
+          <p>Aufbau eines Citizen-Development-Programms und Schulung der Mitarbeitenden, damit sie eigene Low-Code-Lösungen sicher bauen. Mit Governance-Kriterien, damit aus schnellen Apps keine Schatten-IT wird.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projekte">
+    <div class="wrap">
+      <div class="sec-head rv"><span class="idx">03 / Referenzen</span><span class="rule"></span></div>
+      <h2 class="rv">Ausgewählte <span class="serif-it">Projekte</span></h2>
+      <div class="proj-grid">
+        <article class="proj rv">
+          <span class="big-idx">01</span>
+          <div class="tags"><span>PostFinance</span><span>UiPath</span><span>Migration</span></div>
+          <h3>Von Blue Prism zu UiPath</h3>
+          <p>Bestehende Automatisierungen analysiert, neu strukturiert und auf UiPath migriert. Dazu wiederverwendbare Libraries aufgebaut, damit die Plattform sauber skaliert.</p>
+          <p class="result">Neue Prozesse sind schneller entwickelt, der Betrieb läuft auf einer Plattform.</p>
+        </article>
+        <article class="proj rv rv-d1">
+          <span class="big-idx">02</span>
+          <div class="tags"><span>maku consulting</span><span>UiPath</span><span>Marketing-Automation</span></div>
+          <h3>Daten aus einem System ohne Schnittstelle</h3>
+          <p>Reports aus einem Alt-System ohne API automatisiert ausgelesen, in Blob Storage geladen und für CRM-Analysen aufbereitet.</p>
+          <p class="result">Daten, die vorher brachlagen, fliessen jetzt in gezielte Kampagnen.</p>
+        </article>
+        <article class="proj rv">
+          <span class="big-idx">03</span>
+          <div class="tags"><span>Power Apps</span><span>Power Automate</span></div>
+          <h3>Funktionswechsel digital abgebildet</h3>
+          <p>Eine App steuert temporäre Funktionswechsel von der Erfassung über den Genehmigungsflow bis zur PDF-Zusammenfassung.</p>
+          <p class="result">Nachvollziehbarer Prozess statt Formulare und Zuruf.</p>
+        </article>
+        <article class="proj rv rv-d1">
+          <span class="big-idx">04</span>
+          <div class="tags"><span>Copilot Studio</span><span>KI</span></div>
+          <h3>Lern-Agent für Testauswertungen</h3>
+          <p>Ein Agent analysiert Testdurchgänge, erkennt typische Fehler und stellt Lerninhalte zusammen, inklusive automatischem Versand per Mail.</p>
+          <p class="result">Trainerinnen und Trainer sparen sich die manuelle Auswertung.</p>
+        </article>
+      </div>
+      <p class="more-projects rv"><strong>Ausserdem:</strong> Betriebs-Dashboards mit UiPath Insights und Splunk, eine Prüf-App für governance-konforme Citizen-Developer-Lösungen sowie eine Rezept-App mit Kotlin, Spring Boot und PostgreSQL aus meinem CAS in Object Oriented Programming.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial" id="stimmen" aria-label="Kundenstimmen">
+    <div class="wrap">
+      <p class="mono testimonial-label rv">Kundenstimmen</p>
+      <p class="testimonial-intro rv">Ein Wort aus der direkten Zusammenarbeit, dazu Auszüge aus meinen Arbeitszeugnissen.</p>
+      <figure class="testimonial-card rv">
+        <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+        <blockquote class="testimonial-quote">
+          Die Zusammenarbeit mit Berkay kann ich jedem Unternehmen empfehlen. Er überzeugt durch seine Expertise und eine genaue, beratende Arbeitsweise. Dazu kommt eine <span class="serif-it">hervorragende Dokumentation</span> und ein echtes Gespür dafür, wie entscheidend User Adoption ist. Berkay baut Lösungen, die im Alltag wirklich ankommen.
+        </blockquote>
+        <figcaption class="testimonial-author">
+          <img class="author-avatar" src="assets/pascal.png" alt="Pascal Kuptz" width="560" height="641" loading="lazy">
+          <span class="author-meta">
+            <span class="author-name">Pascal Kuptz</span>
+            <span class="author-role">CEO &amp; Founder, maku consulting GmbH</span>
+          </span>
+          <span class="author-logo" aria-hidden="true">
+            <svg role="img" aria-label="maku consulting" viewBox="0 0 872 200" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M253.906 0.445312C271.502 0.445327 285.365 6.01389 294.833 16.292C304.305 26.5751 309.431 41.6294 309.431 60.6992V157.662H309.457C309.526 165.865 311.495 172.25 315.478 176.806C319.534 181.446 325.622 184.124 333.72 184.949H333.724L341.959 185.728V195.462H243.257V185.723L250.272 184.948C257.767 184.121 263.344 181.437 267.038 176.789C270.724 172.151 272.481 165.624 272.481 157.217V63.5264C272.481 51.4386 269.165 41.8469 262.892 35.2754C256.615 28.7011 247.434 25.2081 235.824 25.208C219.152 25.208 202.153 35.9331 189.355 54.3232L189.24 54.4893L189.289 54.6846C189.478 55.4532 189.577 56.6387 189.627 58.0664C189.677 59.4852 189.677 61.1066 189.677 62.7324V157.217C189.677 165.634 191.646 172.168 195.7 176.806C199.757 181.446 205.845 184.124 213.943 184.949H213.946L222.183 185.728V195.462H123.48V185.723L130.496 184.948C137.99 184.121 143.567 181.437 147.261 176.789C150.947 172.151 152.704 165.624 152.704 157.217V63.5264C152.704 51.4386 149.389 41.8469 143.115 35.2754C136.839 28.7009 127.657 25.208 116.047 25.208C98.9971 25.2081 81.5905 35.0685 70.0029 51.8721L69.9238 51.9863V157.24C69.9239 165.647 71.6813 172.174 75.3672 176.812C79.0608 181.46 84.6382 184.145 92.1328 184.972L99.1484 185.746V195.484H0.445312V185.751L8.68164 184.973H8.68457C16.783 184.148 22.8708 181.47 26.9277 176.829C30.9824 172.191 32.9511 165.658 32.9512 157.24V47.6621C32.9511 42.135 32.228 38.4388 29.3965 35.1602C26.6002 31.9224 21.7805 29.1363 13.7666 25.2754L13.7627 25.2734L5.40332 21.3516V17.4941L69.9238 0.970703V23.8955L57.2617 41.3027L57.1768 41.4199V55.5703L57.9844 54.4404L64.9717 44.6748L64.9727 44.6729C85.4875 15.813 110.062 0.46875 134.153 0.46875C158.209 0.468872 176.076 11.7071 183.041 31.3184L175.352 42.9541L175.277 43.0664V57.2764L176.093 56.0654L183.505 45.0615L183.508 45.0576C201.96 17.0349 228.581 0.445312 253.906 0.445312Z"/><path d="M424.124 0.869141C426.736 0.869146 429.254 0.939418 431.724 1.0791H431.726C450.93 2.08075 466.049 6.98796 476.751 15.4521C487.442 23.9083 493.765 35.9472 495.324 51.3086L495.325 51.3164L495.326 51.3232C495.42 52.0161 495.487 52.6712 495.487 53.3662V53.3877L495.489 53.4092C495.56 54.1584 495.629 54.9094 495.629 55.6797V55.6895L495.63 55.6992C495.655 56.2602 495.7 56.8137 495.7 57.3623V139.441H495.771V157.22C495.771 163.01 496.698 167.94 498.646 171.966V171.967C502.176 179.403 509.045 183.63 519.209 184.854L519.518 184.955C519.718 185.021 519.911 185.023 520.027 185.023L528.253 185.802V195.535H475.366C465.789 191.731 460.253 183.622 459.935 172.064L469.326 157.508L469.397 157.397V144.803L468.582 146.013L464.475 152.111C462.164 155.542 459.925 158.761 457.757 161.746C450.852 171.169 444.5 178.409 438.322 183.896L438.32 183.896C435.128 186.754 431.984 189.122 428.867 191.094C418.989 197.303 409.113 199.554 397.756 199.554C388.333 199.554 379.982 198.158 372.816 195.516H372.817C354.143 188.599 343.482 172.98 343.482 151.542C343.482 140.802 345.734 132.198 350.974 124.893C356.056 117.808 363.98 111.902 375.5 106.468L376.626 105.943C382.085 103.428 388.325 101.004 395.443 98.6016L395.442 98.6006L458.47 77.5508L458.469 77.5498L458.822 77.4346L459.129 77.333V58.2734C459.129 45.5564 455.295 34.9511 448.52 27.5205C441.741 20.0861 432.051 15.8653 420.418 15.8652C409.667 15.8652 399.616 18.1198 391.98 21.9766C384.357 25.8272 379.065 31.319 378.006 37.8281L377.922 38.3457H390.794C391.932 47.3965 390.869 54.2812 388.281 59.2168C385.668 64.2016 381.481 67.2378 376.332 68.5176L376.331 68.5186C374.412 68.9991 372.371 69.2295 370.208 69.2295C360.211 69.2295 351.32 60.4823 351.32 48.4834C351.32 39.3476 356.334 29.7387 365.176 21.5449C377.997 9.66736 398.894 0.869141 424.124 0.869141ZM458.236 89.7412L458.23 89.7441L416.188 104.276L416.183 104.278C403.186 108.972 394.148 114.091 388.363 120.742C382.564 127.41 380.078 135.568 380.078 146.238C380.078 155.903 383.197 164.063 388.742 169.81C394.203 175.469 401.983 178.751 411.355 178.852V178.88H411.802C429.165 178.88 447.178 165.128 458.76 145.437L458.821 145.333V145.214L459.176 90.0508L459.18 89.4307L458.591 89.625L458.236 89.7412Z"/><path d="M839.022 157.218C839.022 163.008 839.95 167.938 841.898 171.964V171.965C845.474 179.497 852.475 183.739 862.856 184.899C863.03 184.946 863.192 184.95 863.297 184.95V184.951L864.281 185.033V185.052L864.684 185.091L871.528 185.753V195.486H818.642C809.602 191.892 804.191 184.454 803.337 173.933L814.712 158.298L814.798 158.181V144.03L813.989 145.159L811.864 148.127L811.863 148.128L806.175 156.142L806.173 156.144C792.192 176.072 769.694 199.528 736.995 199.528C718.777 199.528 704.707 193.653 695.188 183.22C685.663 172.781 680.645 157.724 680.645 139.274V47.6406C680.645 42.1134 679.921 38.4174 677.09 35.1387C674.294 31.9008 669.474 29.1139 661.46 25.2529L661.456 25.251L653.072 21.3291V17.4727L717.617 0.97168V136.447C717.617 147.513 720.516 157.101 726.682 163.927C732.854 170.761 742.245 174.766 755.101 174.766C775.88 174.766 792.453 161.61 801.969 148.105L802.05 147.99V47.6406C802.05 42.1133 801.327 38.4174 798.495 35.1387C795.699 31.9008 790.88 29.1139 782.866 25.2529L782.861 25.251L774.313 21.2588V17.5195L839.022 0.97168V157.218Z"/><path d="M639.84 4.92969V13.9248C619.7 18.8727 596.767 30.6478 582.779 44.4893L553.555 72.5967L553.245 72.8945L553.532 73.2148L630.508 159.171L630.514 159.179C645.489 175.185 654.98 182.768 671.351 186.494V195.46H612.323L527.454 98.2549L527.145 97.9004L526.808 98.2285L507.711 116.814V100.093L566.112 43.8975L566.113 43.8984C573.54 36.9579 577.066 30.2114 576.583 24.957C576.339 22.3069 575.076 20.0657 572.834 18.4199C570.605 16.7839 567.432 15.7497 563.371 15.4414L555.537 14.6641V4.92969H639.84Z"/></svg>
+          </span>
+        </figcaption>
+      </figure>
+
+      <div class="tcard-grid">
+        <figure class="tcard rv">
+          <span class="tcard-source">Auszug aus dem Zwischenzeugnis</span>
+          <blockquote>Sein Beitrag war für die erfolgreiche Etablierung des Citizen Development Programms von besonderem Wert. Er überprüft Prozesse und Arbeitsabläufe kritisch, entwickelt kreative und gleichzeitig realisierbare Ideen für Verbesserungen und trägt entscheidend zu deren Umsetzung bei.</blockquote>
+          <figcaption class="tcard-foot">
+            <span class="tcard-logo" aria-hidden="true">
+              <svg role="img" aria-label="PostFinance" viewBox="0 0 122 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16.8641 6.30447C16.6127 6.2861 16.3602 6.2861 16.1089 6.2861C13.6969 6.2861 11.5741 6.80892 9.85516 7.82518C11.2948 5.91388 12.0182 3.4063 11.9731 0.467724V0H6.50138L6.5087 0.539964C6.54408 2.53697 6.07682 4.03075 5.124 4.94783C3.88326 6.1355 1.87026 6.31549 0.395281 6.24325L0 6.22243V11.6821L0.215941 11.6955C0.467261 11.7139 0.719801 11.7139 0.971121 11.7139C3.38306 11.7139 5.50586 11.1911 7.22484 10.1748C5.78524 12.0861 5.06178 14.5937 5.10692 17.5323V18H10.5786L10.5713 17.46C10.5359 15.463 11.0032 13.9693 11.956 13.0522C13.1967 11.8645 15.2097 11.6845 16.6847 11.7568L17.08 11.7776V6.31794L16.8641 6.30447Z"/><path d="M30.4134 6.73914C30.4134 8.81328 28.9713 10.7295 26.4764 10.7295H23.6106V15.2586H21.35V2.7488H26.4862C28.9713 2.7488 30.4134 4.66622 30.4134 6.73914ZM23.6106 4.78254V8.69452H26.1446C27.3634 8.69452 28.0941 7.92192 28.1137 6.73792C28.0941 5.55392 27.3634 4.78132 26.1446 4.78132H23.6106V4.78254ZM56.0163 13.6252C54.7206 13.6252 54.2522 13.3118 54.2522 12.2171V8.02109H56.6104V6.16245H53.9496C54.3778 5.76084 54.7585 5.20373 54.6999 3.92301H52.6527C52.6527 4.03075 52.5454 6.00695 50.7227 6.79914V8.02232H52.1257V12.4437C52.1257 14.5668 53.4604 15.5047 55.5954 15.5047C55.9663 15.5047 56.3457 15.4851 56.7166 15.4263V13.5872C56.4726 13.6068 56.2493 13.6264 56.0151 13.6264L56.0163 13.6252ZM66.7242 2.75737H58.6832V15.2573H60.9536V10.1418H66.2948V8.12639H60.9536V4.80091H66.723V2.75615L66.7242 2.75737ZM70.4903 5.97511H68.3371V15.2671H70.4903V5.97511ZM72.5473 15.2684H74.7006V9.96668C74.7006 8.44107 75.8998 7.78601 76.8929 7.78601C77.7799 7.78601 78.4521 8.32352 78.4521 9.64466V15.2684H80.6054V9.38019C80.6054 7.10157 79.494 5.75105 77.3797 5.75105C76.1609 5.75105 74.9434 6.4061 74.5822 7.62928L74.4163 5.97634H72.5448V15.2684H72.5473ZM82.0877 10.6119C82.0877 8.22557 83.4712 5.76084 86.5321 5.76084C87.9351 5.76084 88.988 6.55303 89.1539 7.24727L89.3003 5.98491H91.1913V13.1354C91.1913 13.4195 91.3377 13.7513 91.9807 13.7415V15.3357L91.4939 15.3945C90.2361 15.4728 89.2039 14.7394 89.1551 13.8493V13.8297C88.8916 14.6904 87.7717 15.5022 86.5333 15.5022C83.4638 15.5022 82.0889 12.8612 82.0889 10.6119H82.0877ZM89.1051 10.896V10.1724C89.1051 8.60759 88.0327 7.74683 86.7273 7.74683C85.0608 7.74683 84.3105 9.29203 84.3105 10.6034C84.3105 11.9147 84.8363 13.4795 86.7273 13.4795C88.2767 13.4893 89.1051 12.3249 89.1051 10.8972V10.896ZM93.7399 5.97511V15.2671H95.8932V9.96545C95.8932 8.43984 97.0925 7.78478 98.0855 7.78478C98.9725 7.78478 99.6447 8.3223 99.6447 9.64343V15.2671H101.798V9.37896C101.798 7.10034 100.687 5.74982 98.5723 5.74982C97.3535 5.74982 96.136 6.40488 95.7748 7.62806L95.6089 5.97511H93.7375H93.7399ZM109.921 12.1375C109.53 13.3999 108.615 13.526 108.03 13.526C106.83 13.526 105.447 12.7436 105.447 10.6695C105.447 8.59534 106.85 7.77377 108.03 7.77377C108.643 7.77377 109.599 7.92069 109.901 9.16224L112.018 8.61616C111.595 6.85791 109.866 5.79757 108.041 5.79757C105.175 5.79757 103.334 7.99783 103.334 10.6487C103.334 13.2995 105.049 15.4802 108.031 15.4998C109.981 15.5181 111.396 14.4749 111.906 12.6518L109.922 12.1351L109.921 12.1375ZM121.728 12.8502C121.222 14.3856 119.915 15.5022 117.837 15.5022C114.933 15.5022 113.072 13.302 113.072 10.6315C113.072 7.81417 114.934 5.78043 117.692 5.78043C119.612 5.79023 122 6.95464 122 10.5238L121.98 11.1397H115.269C115.211 12.489 116.357 13.6436 117.819 13.6436C118.569 13.6436 119.447 13.4183 119.769 12.3432L121.729 12.8502H121.728ZM115.357 9.60425L119.782 9.59935C119.782 8.39576 118.852 7.53011 117.742 7.53011C116.484 7.53011 115.475 8.45943 115.358 9.60425H115.357ZM69.4778 4.53766C70.1402 4.53766 70.7063 3.99035 70.7063 3.32427C70.7063 2.65819 70.1414 2.11089 69.4778 2.11089C68.8348 2.11089 68.2687 2.65819 68.2687 3.32427C68.2687 3.99035 68.8336 4.53766 69.4778 4.53766ZM35.8131 5.68248C33.0351 5.68248 31.077 7.90233 31.077 10.5923C31.077 13.2824 33.0071 15.5022 35.8326 15.5022C38.6398 15.5022 40.5686 13.2628 40.5686 10.5923C40.5686 7.90233 38.6386 5.68248 35.8131 5.68248ZM35.8326 13.5664C34.3027 13.5664 33.0547 12.2367 33.0547 10.5838C33.0547 8.93083 34.3027 7.60112 35.8326 7.60112C37.3625 7.60112 38.6105 8.93083 38.6105 10.5838C38.6105 12.2367 37.3625 13.5664 35.8326 13.5664ZM45.9293 15.5022C48.3169 15.5022 49.9053 14.1921 49.9053 12.2453C49.9053 10.0646 47.9069 9.80995 46.2111 9.59446C44.9728 9.42794 43.8822 9.26142 43.8822 8.35169C43.8822 7.71622 44.4275 7.25584 45.5682 7.25584C46.7675 7.25584 47.4104 7.77376 47.6739 8.69329L49.7308 8.16558C49.3502 6.60078 48.035 5.46576 45.6573 5.46576C43.2502 5.46576 41.7008 6.62037 41.7008 8.56596C41.7008 10.7662 43.6796 11.0601 45.4047 11.3245C46.6723 11.5204 47.7044 11.6772 47.7044 12.5477C47.7044 13.242 47.0651 13.6901 45.9732 13.6901C44.8325 13.6901 43.9529 13.1844 43.6601 12.1375L41.5837 12.6751C42.0997 14.4456 43.7955 15.5022 45.9305 15.5022H45.9293Z"/></svg>
+            </span>
+            <span class="tcard-cite">
+              <span class="tcard-name">PostFinance AG</span>
+              <span class="tcard-role">Bern · 2025</span>
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="tcard rv rv-d1">
+          <span class="tcard-source">Auszug aus dem Abschlusszeugnis</span>
+          <blockquote>Er verfügte über ein äusserst umfassendes und vertieftes Fachwissen, verbunden mit einer ausgesprochen grossen Erfahrung. Sowohl qualitativ als auch quantitativ erbrachte er jederzeit hervorragende Leistungen, die unseren hohen Anforderungen in jeder Hinsicht entsprachen.</blockquote>
+          <figcaption class="tcard-foot">
+            <span class="tcard-logo is-pwc" aria-hidden="true">
+              <svg role="img" aria-label="PwC" viewBox="0 0 70 53" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M51.7,30.3c-2.5.4-3.7,2.2-3.7,5.4s1.7,5.4,4.2,5.4,2.3-.4,4.6-1.5v2.6c-2.7,1.3-4.3,1.6-6.6,1.6s-4.1-.6-5.4-2c-1.4-1.4-2.1-3.3-2.1-5.3,0-4.6,3.4-7.7,8.4-7.7s5.6,1.5,5.6,3.7-1.1,2.4-2.6,2.4-1.5-.2-2.3-.7v-3.9h0ZM39.6,36.4c2.2-2.8,3-3.9,3-5.3s-1.1-2.5-2.5-2.5-1.7.4-2.1.9v5.7l-3.6,4.8v-11h-3.4l-5.7,9.5v-9.5h-2l-5.2,1.3v1.3l2.8.3v11.6h3.7l5.5-9v9h4l5.6-7.1h-.1ZM7.2,32c.8,0,1.3-.2,1.7-.2,2.4,0,3.7,1.6,3.7,4.6s-1.6,5.4-4.5,5.4-.4,0-.8,0v-9.7h0ZM7.2,43.4c.9,0,1.9,0,2.4,0,4.9,0,8-3.1,8-7.8s-2.3-6.9-5.5-6.9-2.3.3-4.9,1.9v-1.9h-1.5l-5.7,1.7v1.4h2.4v16.2l-2.1.5v1.3h9.3v-1.3l-2.4-.5v-4.7h0Z"/><path d="M49.1,24.8h-15.5l2.6-4.4h15.5l-2.6,4.4ZM69.9,16h-15.5l-2.6,4.4h15.5l2.6-4.4Z"/></svg>
+            </span>
+            <span class="tcard-cite">
+              <span class="tcard-name">PricewaterhouseCoopers AG</span>
+              <span class="tcard-role">Zürich · 2022</span>
+            </span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="arbeitsweise">
+    <div class="wrap">
+      <div class="sec-head rv"><span class="idx">04 / Arbeitsweise</span><span class="rule"></span></div>
+      <h2 class="rv">So läuft ein Projekt <span class="serif-it">mit mir</span></h2>
+      <div class="steps">
+        <div class="step rv">
+          <div class="num">01</div>
+          <h3>Verstehen</h3>
+          <p>Ich schaue mir den Prozess mit den Leuten an, die ihn täglich machen. Danach weisst du, was Automatisierung bringt, was sie kostet und ob sie sich lohnt.</p>
+        </div>
+        <div class="step rv rv-d1">
+          <div class="num">02</div>
+          <h3>Bauen</h3>
+          <p>Umsetzung in kurzen Schritten, früh testbar, governance-konform. Du siehst laufend, was entsteht, und kannst steuern statt hoffen.</p>
+        </div>
+        <div class="step rv rv-d2">
+          <div class="num">03</div>
+          <h3>Betreiben</h3>
+          <p>Monitoring, Dokumentation und Übergabe gehören dazu. Auf Wunsch schule ich dein Team, damit es die Lösung selbst weiterentwickeln kann.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="ueber-mich">
+    <div class="wrap">
+      <div class="sec-head rv"><span class="idx">05 / Über mich</span><span class="rule"></span></div>
+      <h2 class="rv">Beide Seiten <span class="serif-it">erlebt</span></h2>
+      <div class="about-grid">
+        <figure class="about-figure rv">
+          <img src="assets/cityview.jpg" alt="Berkay Sevgili in Zürich, im Hintergrund das Grossmünster" loading="lazy" width="1400" height="1674">
+          <figcaption><span>Zürich</span><span>2026</span></figcaption>
+        </figure>
+        <div class="about-text">
+          <p class="lead rv">Bevor ich Automatisierungen gebaut habe, habe ich selbst im operativen Umfeld gearbeitet. Ich kenne Medienbrüche <span class="serif-it">nicht aus Workshops,</span> sondern aus dem eigenen Arbeitsalltag.</p>
+          <p class="rv">Deshalb baue ich Lösungen, die im Alltag bestehen. Technische Umsetzung, Prozessverständnis und Governance gehören für mich zusammen, sonst entsteht Software, die nach dem Go-live niemand pflegt.</p>
+          <p class="rv">Abseits der Arbeit findest du mich beim Segeln, Wandern oder mit einem Buch. Dinge, die den Kopf freimachen und den Blick fürs Ganze schärfen.</p>
+        </div>
+      </div>
+
+      <div class="sec-head tl-label rv"><span class="idx">Werdegang</span><span class="rule"></span></div>
+      <div class="timeline">
+        <div class="tl-row rv">
+          <time>Seit 05/2026</time>
+          <h3>Software Engineer, Migros</h3>
+          <p>UiPath-Lösungen, Power-Platform-Projekte und digitale Lösungen im Unternehmensumfeld.</p>
+        </div>
+        <div class="tl-row rv">
+          <time>2022 bis 2026</time>
+          <h3>Automation Engineer, PostFinance</h3>
+          <p>RPA und Power Platform, dazu Aufbau von Governance- und Schulungsstrukturen.</p>
+        </div>
+        <div class="tl-row rv">
+          <time>2022</time>
+          <h3>Technology Consultant, PwC</h3>
+          <p>BI-Lösungen, Datenintegration und technische Beratung in Financial Services.</p>
+        </div>
+        <div class="tl-row rv">
+          <time>2025</time>
+          <h3>CAS Object Oriented Programming</h3>
+          <p>ZHAW Zürich</p>
+        </div>
+        <div class="tl-row rv">
+          <time>2021</time>
+          <h3>BSc Wirtschaftsinformatik</h3>
+          <p>ZHAW Winterthur</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="kontakt">
+    <div class="wrap">
+      <div class="sec-head rv"><span class="idx">06 / Kontakt</span><span class="rule"></span></div>
+      <h2 class="rv">Erzähl mir,<br><span class="serif-it">was hakt.</span></h2>
+      <p class="section-intro rv">Zwei Sätze reichen für den Anfang. Du bekommst innert zwei Arbeitstagen eine Antwort, und wenn ich nicht der Richtige bin, sage ich dir das auch.</p>
+      <div class="contact-grid">
+        <form id="contact-form" class="rv" action="mailto:berkay.sevgili@outlook.com" method="get" enctype="text/plain">
+          <div class="field">
+            <label for="email">Deine E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="deine@email.ch" required>
+          </div>
+          <div class="field">
+            <label for="message">Worum geht es?</label>
+            <textarea id="message" name="message" placeholder="Zum Beispiel: Wir kopieren jede Woche Daten von Hand aus System A nach System B." required></textarea>
+          </div>
+          <button id="contact-send" class="btn" type="submit">Nachricht senden <span class="arr">→</span></button>
+        </form>
+        <div class="contact-aside rv rv-d1">
+          <p>Lieber direkt schreiben?</p>
+          <a class="mail" href="mailto:berkay.sevgili@outlook.com">berkay.sevgili@outlook.com</a>
+          <p>Ich freue mich auch über einen Austausch ohne konkretes Projekt, zum Beispiel zu Automatisierungsideen oder Citizen Development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-name" aria-hidden="true">Berkay Sevgili</div>
+    <div class="footer-row">
+      <span>© 2026 Berkay Sevgili</span>
+      <nav class="footer-links" aria-label="Rechtliches">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+      <span>Automation Engineer</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Header-Zustand beim Scrollen
+  var header = document.getElementById('site-header');
+  addEventListener('scroll', function () {
+    header.classList.toggle('scrolled', scrollY > 10);
+  }, { passive: true });
+
+  // Scroll-Reveals (Progressive Enhancement, ohne IntersectionObserver-Abhängigkeit).
+  // Inhalt ist ohne .js immer sichtbar; die Klasse wird nur gesetzt, wenn dieses Skript läuft.
+  (function () {
+    var els = Array.prototype.slice.call(document.querySelectorAll('.rv'));
+    if (!els.length) return;
+    document.documentElement.classList.add('js');
+    function reveal() {
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+      for (var i = els.length - 1; i >= 0; i--) {
+        if (els[i].getBoundingClientRect().top < vh * 0.9) {
+          els[i].classList.add('in');
+          els.splice(i, 1);
+        }
+      }
+    }
+    reveal();
+    window.addEventListener('scroll', reveal, { passive: true });
+    window.addEventListener('resize', reveal, { passive: true });
+    window.addEventListener('load', reveal);
+  })();
+
+  // Formular ohne Backend: erzeugt nur einen mailto-Link und oeffnet den Mail-Client.
+  (function () {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Verwendet native Browser-Validierung, bevor der Mail-Client geoeffnet wird.
+      if (!form.reportValidity()) return;
+
+      var email = document.getElementById('email').value.trim();
+      var message = document.getElementById('message').value.trim();
+      var subject = encodeURIComponent('Anfrage ueber deine Website');
+      var body = encodeURIComponent(message + '\n\nAntwort bitte an: ' + email);
+      window.location.href = 'mailto:berkay.sevgili@outlook.com?subject=' + subject + '&body=' + body;
+    });
+  })();
+</script>
+
+</body>
+</html>
