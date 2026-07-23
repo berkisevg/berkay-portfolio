@@ -40,6 +40,7 @@ li { margin-bottom: 6px; }
 a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
 strong { color: var(--ink); }
 .addr { font-style: normal; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; color: var(--ink); margin-bottom: 14px; }
+.addr-line { display: block; }
 .muted { color: var(--ink-faint); font-size: 0.9rem; }
 
 /* Fuss */
