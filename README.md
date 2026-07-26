@@ -3,7 +3,7 @@
 Statische Landingpage für Berkay Sevgili (Automation Engineer, Zürich).
 Mobile-first, ein `index.html` plus `assets/`, ohne Build-Schritt.
 
-**Live:** https://pascal-kuptz.github.io/berkay-portfolio/
+**Live:** https://www.berkaysevgili.ch/
 
 ## Lokal ansehen
 

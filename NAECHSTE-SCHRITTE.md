@@ -1,7 +1,7 @@
 # Nächste Schritte
 
 Kurze Übergabe, damit du die Seite selbst fertigstellen kannst. Die Seite ist live unter
-**https://pascal-kuptz.github.io/berkay-portfolio/** und läuft als statische Seite (nur HTML/CSS,
+**https://www.berkaysevgili.ch/** und läuft als statische Seite (nur HTML/CSS,
 etwas JS, keine Datenbank, kein Build-Schritt).
 
 ## Lokal starten
